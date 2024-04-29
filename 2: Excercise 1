@@ -1,0 +1,16 @@
+import java.io.*;
+import java.util.Scanner;
+
+public class Main
+{
+   public static void main(String[] args)
+   {
+       Scanner scnr = new Scanner(System.in);            //creating scanner object for the user input
+
+       System.out.print("Enter a degree in Celsius: ");
+       double celsius = scnr.nextDouble();               //user input celsius temperature
+double fahrenheit= (9.0/5) * celsius + 32;               //converting celsius to fahrenheit temp
+
+       
+       System.out.println(celsius + " Celsius is " + fahrenheit+ " Fahrenheit");  //printing the output
+   }
